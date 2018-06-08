@@ -98,6 +98,8 @@ public:
 
         vSeeds.push_back(CDNSSeedData("nodes.docrypto.com","quan.nodes.docrypto.com"));
         vSeeds.push_back(CDNSSeedData("quantis-coin.io","quantis-coin.io"));
+        vSeeds.push_back(CDNSSeedData("quantis.syshost.io","quantis.syshost.io"));
+        vSeeds.push_back(CDNSSeedData("backup.syshost.io","backup.syshost.io"));
 
         convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
 
