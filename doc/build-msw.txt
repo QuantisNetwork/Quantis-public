@@ -7,7 +7,7 @@ cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP
 software written by Thomas Bernard.
 
 
-See readme-qt.rst for instructions on building Quantis QT, the
+See readme-qt.rst for instructions on building QLegacy QT, the
 graphical user interface.
 
 WINDOWS BUILD NOTES
@@ -76,9 +76,9 @@ make -f Makefile.mingw
 mkdir miniupnpc
 cp *.h miniupnpc/
 
-Quantis
+QLegacy
 -------
 DOS prompt:
-cd \Quantis\src
+cd \QLegacy\src
 mingw32-make -f makefile.mingw
-strip quantisd.exe
+strip QLegacyd.exe

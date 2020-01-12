@@ -90,7 +90,7 @@ static int secp256k1_wnaf_const(int *wnaf, secp256k1_scalar s, int w) {
     global_sign *= not_neg_one * 2 - 1;
     skew = 1 << bit;
 #else
-    /* Otherwise, we just negate to Quantis oddness */
+    /* Otherwise, we just negate to QLegacy oddness */
     int is_even = secp256k1_scalar_is_even(&s);
     global_sign = secp256k1_scalar_cond_negate(&s, is_even);
 #endif

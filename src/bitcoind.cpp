@@ -52,12 +52,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("Quantis version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("QLegacy version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  quantisd [options]                     " + "\n" +
-                  "  quantisd [options] <command> [params]  " + _("Send command to -server or quantisd") + "\n" +
-                  "  quantisd [options] help                " + _("List commands") + "\n" +
-                  "  quantisd [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  QLegacyd [options]                     " + "\n" +
+                  "  QLegacyd [options] <command> [params]  " + _("Send command to -server or QLegacyd") + "\n" +
+                  "  QLegacyd [options] help                " + _("List commands") + "\n" +
+                  "  QLegacyd [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -67,7 +67,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "Quantis:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "QLegacy:"))
                 fCommandLine = true;
 
         if (fCommandLine)

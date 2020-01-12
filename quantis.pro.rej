@@ -1,8 +1,8 @@
---- quantis.pro
-+++ quantis.pro
+--- QLegacy.pro
++++ QLegacy.pro
 @@ -1,6 +1,6 @@
  TEMPLATE = app
- TARGET = quantis-qt
+ TARGET = QLegacy-qt
 -VERSION = 3.7.0.0
 +VERSION = 3.7.1.0
  INCLUDEPATH += src src/json src/qt src/qt/plugins/mrichtexteditor

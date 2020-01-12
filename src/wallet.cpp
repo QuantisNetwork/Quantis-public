@@ -156,7 +156,7 @@ bool CWallet::LoadCScript(const CScript& redeemScript)
      * these. Do not add them to the wallet and warn. */
     if (redeemScript.size() > MAX_SCRIPT_ELEMENT_SIZE)
     {
-        std::string strAddr = CQuantisCoinAddress(redeemScript.GetID()).ToString();
+        std::string strAddr = CQLegacyCoinAddress(redeemScript.GetID()).ToString();
         LogPrintf("%s: Warning: This wallet contains a redeemScript of size %u which exceeds maximum size %i thus can never be redeemed. Do not use address %s.\n",
             __func__, redeemScript.size(), MAX_SCRIPT_ELEMENT_SIZE, strAddr);
         return true;
@@ -750,7 +750,7 @@ void CWallet::SyncTransaction(const CTransaction& tx, const CBlock* pblock, bool
         return; // Not one of ours
 
     // If a transaction changes 'conflicted' state, that changes the balance
-    // available of the outputs it spends. So Quantis those to be
+    // available of the outputs it spends. So QLegacy those to be
     // recomputed, also:
     BOOST_FOREACH(const CTxIn& txin, tx.vin)
     {
@@ -1243,7 +1243,7 @@ void CWallet::ReacceptWalletTransactions()
                 }
                 if (fUpdated)
                 {
-                    LogPrintf("ReacceptWalletTransactions found spent coin %s QUAN %s\n", FormatMoney(wtx.GetCredit(ISMINE_ALL)), wtx.GetHash().ToString());
+                    LogPrintf("ReacceptWalletTransactions found spent coin %s QXAN %s\n", FormatMoney(wtx.GetCredit(ISMINE_ALL)), wtx.GetHash().ToString());
                     wtx.MarkDirty();
                     wtx.WriteToDisk();
                 }
@@ -1985,7 +1985,7 @@ bool CWallet::SelectCoins(int64_t nTargetValue, unsigned int nSpendTime, set<pai
         return (nValueRet >= nTargetValue);
     }
 
-    //if we're doing only denominated, we need to round up to the nearest .1QUAN
+    //if we're doing only denominated, we need to round up to the nearest .1QXAN
     if(coin_type == ONLY_DENOMINATED) {
         // Make outputs by looping through denominations, from large to small
         BOOST_FOREACH(int64_t v, darkSendDenominations)
@@ -1993,7 +1993,7 @@ bool CWallet::SelectCoins(int64_t nTargetValue, unsigned int nSpendTime, set<pai
             BOOST_FOREACH(const COutput& out, vCoins)
             {
                 if(out.tx->vout[out.i].nValue == v                                            //make sure it's the denom we're looking for
-                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1*COIN)+100 //round the amount up to .1QUAN over
+                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1*COIN)+100 //round the amount up to .1QXAN over
                 ){
                     CTxIn vin = CTxIn(out.tx->GetHash(),out.i);
                     int rounds = GetInputDarksendRounds(vin);
@@ -2100,11 +2100,11 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, int64_t nValueMin, int64_t 
 
             // Function returns as follows:
             //
-            // bit 0 - 1000QUAN+1 ( bit on if present )
-            // bit 1 - 100QUAN+1
-            // bit 2 - 10QUAN+1
-            // bit 3 - 1QUAN+1
-            // bit 4 - .1QUAN+1
+            // bit 0 - 1000QXAN+1 ( bit on if present )
+            // bit 1 - 100QXAN+1
+            // bit 2 - 10QXAN+1
+            // bit 3 - 1QXAN+1
+            // bit 4 - .1QXAN+1
 
             CTxIn vin = CTxIn(out.tx->GetHash(),out.i);
 
@@ -2421,7 +2421,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend, 
                     } else if (coin_type == ONLY_NOT10000IFMN) {
                         strFailReason = _(" Unable to locate enough Darksend non-denominated funds for this transaction.");
                     } else if (coin_type == ONLY_NONDENOMINATED_NOT10000IFMN ) {
-                        strFailReason = _(" Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 QUAN.");
+                        strFailReason = _(" Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 QXAN.");
                     } else {
                         strFailReason = _(" Unable to locate enough Darksend denominated funds for this transaction.");
                         strFailReason += _(" Darksend uses exact denominated amounts to send funds, you might simply need to anonymize some more coins.");
@@ -2459,7 +2459,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend, 
                 {
                     // Fill a vout to ourself
                     // TODO: pass in scriptChange instead of reservekey so
-                    // change transaction isn't always pay-to-Quantis-address
+                    // change transaction isn't always pay-to-QLegacy-address
                     CScript scriptChange;
 
                     // coin control: send change to custom address
@@ -2738,7 +2738,7 @@ bool CWallet::UnlockStealthAddresses(const CKeyingMaterial& vMasterKeyIn)
             continue;
 
         CKeyID ckid = pubKey.GetID();
-        CQuantisCoinAddress addr(ckid);
+        CQLegacyCoinAddress addr(ckid);
 
         StealthKeyMetaMap::iterator mi = mapStealthKeyMeta.find(ckid);
         if (mi == mapStealthKeyMeta.end())
@@ -2826,7 +2826,7 @@ bool CWallet::UnlockStealthAddresses(const CKeyingMaterial& vMasterKeyIn)
         if (fDebug)
         {
             CKeyID keyID = cpkT.GetID();
-            CQuantisCoinAddress coinAddress(keyID);
+            CQLegacyCoinAddress coinAddress(keyID);
             printf("Adding secret to key %s.\n", coinAddress.ToString().c_str());
         };
 
@@ -3026,7 +3026,7 @@ bool CWallet::SendStealthMoneyToDestination(CStealthAddress& sxAddress, int64_t 
 
     CKeyID ckidTo = cpkTo.GetID();
 
-    CQuantisCoinAddress addrTo(ckidTo);
+    CQLegacyCoinAddress addrTo(ckidTo);
 
     if (SecretToPublicKey(ephem_secret, ephem_pubkey) != 0)
     {
@@ -3192,7 +3192,7 @@ bool CWallet::FindStealthTransactions(const CTransaction& tx, mapValue_t& mapNar
                     std::vector<uint8_t> vchEmpty;
                     AddCryptedKey(cpkE, vchEmpty);
                     CKeyID keyId = cpkE.GetID();
-                    CQuantisCoinAddress coinAddress(keyId);
+                    CQLegacyCoinAddress coinAddress(keyId);
                     std::string sLabel = it->Encoded();
                     SetAddressBookName(keyId, sLabel);
 
@@ -3255,7 +3255,7 @@ bool CWallet::FindStealthTransactions(const CTransaction& tx, mapValue_t& mapNar
                     CKeyID keyID = cpkT.GetID();
                     if (fDebug)
                     {
-                        CQuantisCoinAddress coinAddress(keyID);
+                        CQLegacyCoinAddress coinAddress(keyID);
                         printf("Adding key %s.\n", coinAddress.ToString().c_str());
                     };
 
@@ -3542,7 +3542,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
 
         CTxDestination address1;
         ExtractDestination(payee, address1);
-        CQuantisCoinAddress address2(address1);
+        CQLegacyCoinAddress address2(address1);
 
         LogPrintf("Masternode payment to %s\n", address2.ToString().c_str());
     }
@@ -3557,7 +3557,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
 
         CTxDestination address1;
         ExtractDestination(payeerewardaddress, address1);
-        CQuantisCoinAddress address2(address1);
+        CQLegacyCoinAddress address2(address1);
 
         LogPrintf("Masternode payment to %s\n", address2.ToString().c_str());
     }
@@ -3575,11 +3575,11 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
 
         CTxDestination address1;
         ExtractDestination(payee, address1);
-        CQuantisCoinAddress address2(address1);
+        CQLegacyCoinAddress address2(address1);
         
         CTxDestination address3;
         ExtractDestination(payeerewardaddress, address3);
-        CQuantisCoinAddress address4(address3);
+        CQLegacyCoinAddress address4(address3);
 
         LogPrintf("Masternode payment to %s\n", address2.ToString().c_str());
     }
@@ -3637,7 +3637,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
         payments = txNew.vout.size() + 1;
         txNew.vout.resize(payments);
 
-        CQuantisCoinAddress devRewardAddress(getDevAddress(pindexPrev->nHeight+1));
+        CQLegacyCoinAddress devRewardAddress(getDevAddress(pindexPrev->nHeight+1));
         CScript devRewardscriptPubKey = GetScriptForDestination(devRewardAddress.Get());
 
         txNew.vout[payments-1].scriptPubKey = devRewardscriptPubKey;
@@ -4005,7 +4005,7 @@ bool CWallet::SetAddressBookName(const CTxDestination& address, const string& st
                              (fUpdated ? CT_UPDATED : CT_NEW) );
     if (!fFileBacked)
         return false;
-    return CWalletDB(strWalletFile).WriteName(CQuantisCoinAddress(address).ToString(), strName);
+    return CWalletDB(strWalletFile).WriteName(CQLegacyCoinAddress(address).ToString(), strName);
 }
 
 bool CWallet::DelAddressBookName(const CTxDestination& address)
@@ -4020,8 +4020,8 @@ bool CWallet::DelAddressBookName(const CTxDestination& address)
 
     if (!fFileBacked)
         return false;
-    CWalletDB(strWalletFile).EraseName(CQuantisCoinAddress(address).ToString());
-    return CWalletDB(strWalletFile).EraseName(CQuantisCoinAddress(address).ToString());
+    CWalletDB(strWalletFile).EraseName(CQLegacyCoinAddress(address).ToString());
+    return CWalletDB(strWalletFile).EraseName(CQLegacyCoinAddress(address).ToString());
 }
 
 bool CWallet::GetTransaction(const uint256 &hashTx, CWalletTx& wtx)
@@ -4376,7 +4376,7 @@ void CWallet::FixSpentCoins(int& nMismatchFound, int64_t& nBalanceInQuestion, bo
         {
             if (IsMine(pcoin->vout[n]) && pcoin->IsSpent(n) && (txindex.vSpent.size() <= n || txindex.vSpent[n].IsNull()))
             {
-                LogPrintf("FixSpentCoins found lost coin %s QUAN %s[%d], %s\n",
+                LogPrintf("FixSpentCoins found lost coin %s QXAN %s[%d], %s\n",
                     FormatMoney(pcoin->vout[n].nValue), pcoin->GetHash().ToString(), n, fCheckOnly? "repair not attempted" : "repairing");
                 nMismatchFound++;
                 nBalanceInQuestion += pcoin->vout[n].nValue;
@@ -4388,7 +4388,7 @@ void CWallet::FixSpentCoins(int& nMismatchFound, int64_t& nBalanceInQuestion, bo
             }
             else if (IsMine(pcoin->vout[n]) && !pcoin->IsSpent(n) && (txindex.vSpent.size() > n && !txindex.vSpent[n].IsNull()))
             {
-                LogPrintf("FixSpentCoins found spent coin %s QUAN %s[%d], %s\n",
+                LogPrintf("FixSpentCoins found spent coin %s QXAN %s[%d], %s\n",
                     FormatMoney(pcoin->vout[n].nValue), pcoin->GetHash().ToString(), n, fCheckOnly? "repair not attempted" : "repairing");
                 nMismatchFound++;
                 nBalanceInQuestion += pcoin->vout[n].nValue;

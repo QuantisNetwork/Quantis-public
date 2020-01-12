@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Quantis</source>
-        <translation>Om Quantis</translation>
+        <source>About QLegacy</source>
+        <translation>Om QLegacy</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Quantis&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Quantis&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;QLegacy&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;QLegacy&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2015-2017 The Quantis developers</source>
+Copyright © 2015-2017 The QLegacy developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2015-2017 The Quantis developers</translation>
+Copyright © 2015-2017 The QLegacy developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,8 +60,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your Quantis addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dette er dine Quantis adresser til at modtage betalinger. Du ønsker måske at give en anden en til af hver afsender, så du kan holde styr på hvem der betaler dig.</translation>
+        <source>These are your QLegacy addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dette er dine QLegacy adresser til at modtage betalinger. Du ønsker måske at give en anden en til af hver afsender, så du kan holde styr på hvem der betaler dig.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a Quantis address</source>
-        <translation>Signerer en meddelelse for at bevise du ejer en Quantis adresse</translation>
+        <source>Sign a message to prove you own a QLegacy address</source>
+        <translation>Signerer en meddelelse for at bevise du ejer en QLegacy adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified Quantis address</source>
-        <translation>Bekræft en meddelelse for at sikre, den blev underskrevet med en specificeret Quantis adresse</translation>
+        <source>Verify a message to ensure it was signed with a specified QLegacy address</source>
+        <translation>Bekræft en meddelelse for at sikre, den blev underskrevet med en specificeret QLegacy adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -258,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>Quantis will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Quantis lukker nu for at afslutte krypteringen. Husk at en krypteret  tegnebog ikke fuldt ud beskytter dine mønter mod at blive stjålet af malware som har inficeret din computer.</translation>
+        <source>QLegacy will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>QLegacy lukker nu for at afslutte krypteringen. Husk at en krypteret  tegnebog ikke fuldt ud beskytter dine mønter mod at blive stjålet af malware som har inficeret din computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -352,8 +352,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Quantis</source>
-        <translation>Vis oplysninger om Quantis</translation>
+        <source>Show information about QLegacy</source>
+        <translation>Vis oplysninger om QLegacy</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +392,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a Quantis address</source>
-        <translation>Send mønter til en Quantis adresse</translation>
+        <source>Send coins to a QLegacy address</source>
+        <translation>Send mønter til en QLegacy adresse</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for Quantis</source>
-        <translation>Ændre indstillingsmuligheder for Quantis</translation>
+        <source>Modify configuration options for QLegacy</source>
+        <translation>Ændre indstillingsmuligheder for QLegacy</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -438,8 +438,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+551"/>
-        <source>Quantis</source>
-        <translation>Quantis</translation>
+        <source>QLegacy</source>
+        <translation>QLegacy</translation>
     </message>
     <message>
         <location line="-551"/>
@@ -448,8 +448,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About Quantis</source>
-        <translation>&amp;Om Quantis</translation>
+        <source>&amp;About QLegacy</source>
+        <translation>&amp;Om QLegacy</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>Quantis client</source>
-        <translation>Quantis klient</translation>
+        <source>QLegacy client</source>
+        <translation>QLegacy klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to Quantis network</source>
-        <translation><numerusform>%n aktiv forbindelse til Quantis netværk</numerusform><numerusform>%n aktive forbindelser til Quantis netværk</numerusform></translation>
+        <source>%n active connection(s) to QLegacy network</source>
+        <translation><numerusform>%n aktiv forbindelse til QLegacy netværk</numerusform><numerusform>%n aktive forbindelser til QLegacy netværk</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -600,8 +600,8 @@ Adresse: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Quantis address or malformed URI parameters.</source>
-        <translation>URI kan ikke tolkes! Dette kan skyldes en ugyldig Quantis adresse eller misdannede URI parametre.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid QLegacy address or malformed URI parameters.</source>
+        <translation>URI kan ikke tolkes! Dette kan skyldes en ugyldig QLegacy adresse eller misdannede URI parametre.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -723,7 +723,7 @@ Adresse: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. Quantis can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. QLegacy can no longer continue safely and will quit.</source>
         <translation>Der opstod en fejl under forsøg på at gemme dataene i tegnebogen til den nye placering.</translation>
     </message>
 </context>
@@ -1057,8 +1057,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Quantis address.</source>
-        <translation>Den indtastede adresse &quot;%1&quot; er ikke en gyldig Quantis adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid QLegacy address.</source>
+        <translation>Den indtastede adresse &quot;%1&quot; er ikke en gyldig QLegacy adresse.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1076,8 +1076,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>Quantis-Qt</source>
-        <translation>Quantis-Qt</translation>
+        <source>QLegacy-Qt</source>
+        <translation>QLegacy-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1149,13 +1149,13 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Quantis after logging in to the system.</source>
-        <translation>Automatisk start Quantis efter at have logget ind på systemet.</translation>
+        <source>Automatically start QLegacy after logging in to the system.</source>
+        <translation>Automatisk start QLegacy efter at have logget ind på systemet.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Quantis on system login</source>
-        <translation>&amp;Start Quantis ved systems login</translation>
+        <source>&amp;Start QLegacy on system login</source>
+        <translation>&amp;Start QLegacy ved systems login</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1164,8 +1164,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Quantis client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisk åbne Quantis klient-port på routeren. Dette virker kun, når din router understøtter UPnP og er det er aktiveret.</translation>
+        <source>Automatically open the QLegacy client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisk åbne QLegacy klient-port på routeren. Dette virker kun, når din router understøtter UPnP og er det er aktiveret.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1174,8 +1174,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Quantis network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Opret forbindelse til Quantis netværk via en SOCKS proxy (fx ved tilslutning gennem Tor).</translation>
+        <source>Connect to the QLegacy network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Opret forbindelse til QLegacy netværk via en SOCKS proxy (fx ved tilslutning gennem Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1249,8 +1249,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Quantis.</source>
-        <translation>Sproget i brugergrænsefladen kan indstilles her. Denne indstilling vil træde i kraft efter genstart af Quantis tegnebog.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting QLegacy.</source>
+        <translation>Sproget i brugergrænsefladen kan indstilles her. Denne indstilling vil træde i kraft efter genstart af QLegacy tegnebog.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1316,8 +1316,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Quantis.</source>
-        <translation>Denne indstilling vil træde i kraft efter genstart af Quantis.</translation>
+        <source>This setting will take effect after restarting QLegacy.</source>
+        <translation>Denne indstilling vil træde i kraft efter genstart af QLegacy.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1335,8 +1335,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Quantis network after a connection is established, but this process has not completed yet.</source>
-        <translation>De viste oplysninger kan være forældet. Din tegnebog synkroniserer automatisk med Quantis netværket efter en forbindelse er etableret, men denne proces er ikke afsluttet endnu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the QLegacy network after a connection is established, but this process has not completed yet.</source>
+        <translation>De viste oplysninger kan være forældet. Din tegnebog synkroniserer automatisk med QLegacy netværket efter en forbindelse er etableret, men denne proces er ikke afsluttet endnu.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1577,8 +1577,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Quantis-Qt help message to get a list with possible Quantis command-line options.</source>
-        <translation>Vis Quantis-Qt hjælpe besked for at få en liste med mulige Quantis kommandolinjeparametre.</translation>
+        <source>Show the QLegacy-Qt help message to get a list with possible QLegacy command-line options.</source>
+        <translation>Vis QLegacy-Qt hjælpe besked for at få en liste med mulige QLegacy kommandolinjeparametre.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1597,13 +1597,13 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Quantis - Debug window</source>
-        <translation>Quantis - Debug vindue</translation>
+        <source>QLegacy - Debug window</source>
+        <translation>QLegacy - Debug vindue</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Quantis Core</source>
-        <translation>Quantis Kerne</translation>
+        <source>QLegacy Core</source>
+        <translation>QLegacy Kerne</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1612,8 +1612,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Quantis debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åbn Quantis debug logfilen fra den nuværende data mappe. Dette kan tage et par sekunder for store logfiler.</translation>
+        <source>Open the QLegacy debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åbn QLegacy debug logfilen fra den nuværende data mappe. Dette kan tage et par sekunder for store logfiler.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1622,8 +1622,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the Quantis RPC console.</source>
-        <translation>Velkommen til Quantis RPC-konsol.</translation>
+        <source>Welcome to the QLegacy RPC console.</source>
+        <translation>Velkommen til QLegacy RPC-konsol.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1731,8 +1731,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 QUAN</source>
-        <translation>123.456 QUAN {0.00 ?}</translation>
+        <source>0.00 QXAN</source>
+        <translation>123.456 QXAN {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1801,8 +1801,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 QUAN</source>
-        <translation>123.456 QUAN</translation>
+        <source>123.456 QXAN</source>
+        <translation>123.456 QXAN</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1816,8 +1816,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a Quantis address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Indtast en Quantis-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a QLegacy address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Indtast en QLegacy-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1916,8 +1916,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid Quantis address</source>
-        <translation>ADVARSEL: Ugyldig Quantis adresse</translation>
+        <source>WARNING: Invalid QLegacy address</source>
+        <translation>ADVARSEL: Ugyldig QLegacy adresse</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1990,8 +1990,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Quantis address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Indtast en Quantis-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a QLegacy address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Indtast en QLegacy-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2051,8 +2051,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Quantis address</source>
-        <translation>Underskriv brevet for at bevise du ejer denne Quantis adresse</translation>
+        <source>Sign the message to prove you own this QLegacy address</source>
+        <translation>Underskriv brevet for at bevise du ejer denne QLegacy adresse</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2083,8 +2083,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Quantis address</source>
-        <translation>Kontroller meddelelsen for at sikre, at den blev indgået med den angivne Quantis adresse</translation>
+        <source>Verify the message to ensure it was signed with the specified QLegacy address</source>
+        <translation>Kontroller meddelelsen for at sikre, at den blev indgået med den angivne QLegacy adresse</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2094,8 +2094,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Quantis address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Indtast en Quantis-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a QLegacy address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Indtast en QLegacy-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2104,8 +2104,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Quantis signature</source>
-        <translation>Indtast Quantis underskrift</translation>
+        <source>Enter QLegacy signature</source>
+        <translation>Indtast QLegacy underskrift</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2683,8 +2683,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>Quantis version</source>
-        <translation>Quantis version</translation>
+        <source>QLegacy version</source>
+        <translation>QLegacy version</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2693,8 +2693,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Quantisd</source>
-        <translation>Send kommando til-server eller Quantisd</translation>
+        <source>Send command to -server or QLegacyd</source>
+        <translation>Send kommando til-server eller QLegacyd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2713,13 +2713,13 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: quantis.conf)</source>
-        <translation>Angiv konfigurationsfil (default: quantis.conf)</translation>
+        <source>Specify configuration file (default: QLegacy.conf)</source>
+        <translation>Angiv konfigurationsfil (default: QLegacy.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Quantisd.pid)</source>
-        <translation>Angiv pid fil (standard: Quantisd.pid)</translation>
+        <source>Specify pid file (default: QLegacyd.pid)</source>
+        <translation>Angiv pid fil (standard: QLegacyd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2736,13 +2736,13 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=quantisrpc
+rpcuser=QLegacyrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Quantis Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;QLegacy Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2848,8 +2848,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Quantis Alert&quot; admin@foo.
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Quantis will not work properly.</source>
-        <translation>Advarsel: Kontroller venligst, at computerens dato og klokkeslæt er korrekt! Hvis dit ur er forkert vil Quantis ikke fungere korrekt.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong QLegacy will not work properly.</source>
+        <translation>Advarsel: Kontroller venligst, at computerens dato og klokkeslæt er korrekt! Hvis dit ur er forkert vil QLegacy ikke fungere korrekt.</translation>
     </message>
     <message>
         <location line="+132"/>
@@ -3155,7 +3155,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Quantis Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. Quantis is shutting down.</source>
+        <source>Initialization sanity check failed. QLegacy is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3220,13 +3220,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Quantis Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Quantis</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Wallet kræver en nyere version af Quantis</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of QLegacy</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Wallet kræver en nyere version af QLegacy</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Quantis to complete</source>
-        <translation>Det er nødvendig for wallet at blive omskrevet: Genstart Quantis for fuldføre</translation>
+        <source>Wallet needed to be rewritten: restart QLegacy to complete</source>
+        <translation>Det er nødvendig for wallet at blive omskrevet: Genstart QLegacy for fuldføre</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3290,8 +3290,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Quantis Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+125"/>
-        <source>Unable to bind to %s on this computer. Quantis is probably already running.</source>
-        <translation>Kunne ikke binde sig til% s på denne computer. Quantis kører sikkert allerede.</translation>
+        <source>Unable to bind to %s on this computer. QLegacy is probably already running.</source>
+        <translation>Kunne ikke binde sig til% s på denne computer. QLegacy kører sikkert allerede.</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3330,7 +3330,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Quantis Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Quantis is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. QLegacy is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

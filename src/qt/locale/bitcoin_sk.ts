@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Quantis</source>
-        <translation>O Quantise</translation>
+        <source>About QLegacy</source>
+        <translation>O QLegacye</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Quantis&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Quantis&lt;/b&gt; verzia</translation>
+        <source>&lt;b&gt;QLegacy&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;QLegacy&lt;/b&gt; verzia</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2015-2017 The Quantis developers</source>
+Copyright © 2015-2017 The QLegacy developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2015-2017 The Quantis developers</translation>
+Copyright © 2015-2017 The QLegacy developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,8 +65,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your Quantis addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Toto sú vaše Quantis adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
+        <source>These are your QLegacy addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Toto sú vaše QLegacy adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -80,8 +80,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a Quantis address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto Quantis adresu</translation>
+        <source>Sign a message to prove you own a QLegacy address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto QLegacy adresu</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified Quantis address</source>
-        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou Quantis adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified QLegacy address</source>
+        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou QLegacy adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,8 +263,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+82"/>
-        <source>Quantis will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Quantis sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom, ktorý napadol váš počítač.</translation>
+        <source>QLegacy will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>QLegacy sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom, ktorý napadol váš počítač.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -357,8 +357,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Quantis</source>
-        <translation>Zobraziť informácie o Quantis</translation>
+        <source>Show information about QLegacy</source>
+        <translation>Zobraziť informácie o QLegacy</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -397,13 +397,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a Quantis address</source>
-        <translation>Poslať mince na Quantis adresu</translation>
+        <source>Send coins to a QLegacy address</source>
+        <translation>Poslať mince na QLegacy adresu</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for Quantis</source>
-        <translation>Upraviť možnosti konfigurácie pre Quantis</translation>
+        <source>Modify configuration options for QLegacy</source>
+        <translation>Upraviť možnosti konfigurácie pre QLegacy</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -443,8 +443,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     <message>
         <location line="-214"/>
         <location line="+551"/>
-        <source>Quantis</source>
-        <translation>Quantis</translation>
+        <source>QLegacy</source>
+        <translation>QLegacy</translation>
     </message>
     <message>
         <location line="-551"/>
@@ -453,8 +453,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About Quantis</source>
-        <translation>&amp;O Quantis</translation>
+        <source>&amp;About QLegacy</source>
+        <translation>&amp;O QLegacy</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -505,13 +505,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>Quantis client</source>
-        <translation>Quantis klient</translation>
+        <source>QLegacy client</source>
+        <translation>QLegacy klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to Quantis network</source>
-        <translation><numerusform>%n aktívne spojenie s Quantis sieťov</numerusform><numerusform>%n aktívnych spojení s Quantis sieťov</numerusform><numerusform>%n aktívnych spojení s Quantis sieťou</numerusform></translation>
+        <source>%n active connection(s) to QLegacy network</source>
+        <translation><numerusform>%n aktívne spojenie s QLegacy sieťov</numerusform><numerusform>%n aktívnych spojení s QLegacy sieťov</numerusform><numerusform>%n aktívnych spojení s QLegacy sieťou</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -604,8 +604,8 @@ Adresa: %4</translation>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Quantis address or malformed URI parameters.</source>
-        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou Quantis adresu alebo chybnými URI parametrami.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid QLegacy address or malformed URI parameters.</source>
+        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou QLegacy adresu alebo chybnými URI parametrami.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -727,8 +727,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. Quantis can no longer continue safely and will quit.</source>
-        <translation>Došlo k závažnej chybe. Quantis už nemôže pokračovať bezpečne a bude ukončený.</translation>
+        <source>A fatal error occurred. QLegacy can no longer continue safely and will quit.</source>
+        <translation>Došlo k závažnej chybe. QLegacy už nemôže pokračovať bezpečne a bude ukončený.</translation>
     </message>
 </context>
 <context>
@@ -1061,8 +1061,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Quantis address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; nie je platnou Quantis adresou.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid QLegacy address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; nie je platnou QLegacy adresou.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1080,8 +1080,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>Quantis-Qt</source>
-        <translation>Quantis-Qt</translation>
+        <source>QLegacy-Qt</source>
+        <translation>QLegacy-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1153,13 +1153,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Quantis after logging in to the system.</source>
-        <translation>Automaticky spustiť Quantis po prihlásení sa do systému.</translation>
+        <source>Automatically start QLegacy after logging in to the system.</source>
+        <translation>Automaticky spustiť QLegacy po prihlásení sa do systému.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Quantis on system login</source>
-        <translation>&amp;Spustiť Quantis pri prihlásení do systému</translation>
+        <source>&amp;Start QLegacy on system login</source>
+        <translation>&amp;Spustiť QLegacy pri prihlásení do systému</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1168,8 +1168,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Quantis client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvoriť port klienta Quantis na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
+        <source>Automatically open the QLegacy client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvoriť port klienta QLegacy na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1178,8 +1178,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Quantis network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Pripojenie k sieti Quantis cez SOCKS proxy server (napr. pri pripojení cez Tor).</translation>
+        <source>Connect to the QLegacy network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Pripojenie k sieti QLegacy cez SOCKS proxy server (napr. pri pripojení cez Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1253,8 +1253,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Quantis.</source>
-        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní Quantis.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting QLegacy.</source>
+        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní QLegacy.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1320,8 +1320,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Quantis.</source>
-        <translation>Toto nastavenie sa prejaví až po reštartovaní Quantis.</translation>
+        <source>This setting will take effect after restarting QLegacy.</source>
+        <translation>Toto nastavenie sa prejaví až po reštartovaní QLegacy.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1339,8 +1339,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Quantis network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou Quantis po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the QLegacy network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou QLegacy po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1414,7 +1414,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
         <source>Cannot start transfer: click-to-pay handler</source>
-        <translation>Quantis sa nedá spustiť: click-to-pay handler</translation>
+        <translation>QLegacy sa nedá spustiť: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1581,8 +1581,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Quantis-Qt help message to get a list with possible Quantis command-line options.</source>
-        <translation>Zobraziť Quantis-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku Quantis.</translation>
+        <source>Show the QLegacy-Qt help message to get a list with possible QLegacy command-line options.</source>
+        <translation>Zobraziť QLegacy-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku QLegacy.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1601,13 +1601,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Quantis - Debug window</source>
-        <translation>Quantis - Ladiace okno</translation>
+        <source>QLegacy - Debug window</source>
+        <translation>QLegacy - Ladiace okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Quantis Core</source>
-        <translation>Jadro Quantis</translation>
+        <source>QLegacy Core</source>
+        <translation>Jadro QLegacy</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1616,8 +1616,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Quantis debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvorte Quantis súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
+        <source>Open the QLegacy debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvorte QLegacy súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1626,8 +1626,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the Quantis RPC console.</source>
-        <translation>Vitajte v konzole Quantis RPC.</translation>
+        <source>Welcome to the QLegacy RPC console.</source>
+        <translation>Vitajte v konzole QLegacy RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1735,8 +1735,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 QUAN</source>
-        <translation>123.456 QUAN {0.00 ?}</translation>
+        <source>0.00 QXAN</source>
+        <translation>123.456 QXAN {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1805,8 +1805,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 QUAN</source>
-        <translation>123.456 QUAN</translation>
+        <source>123.456 QXAN</source>
+        <translation>123.456 QXAN</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1820,8 +1820,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a Quantis address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte Quantis adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a QLegacy address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte QLegacy adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1920,8 +1920,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid Quantis address</source>
-        <translation>UPOZORNENIE: Neplatná Quantis adresa</translation>
+        <source>WARNING: Invalid QLegacy address</source>
+        <translation>UPOZORNENIE: Neplatná QLegacy adresa</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1994,8 +1994,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Quantis address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte Quantis adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a QLegacy address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte QLegacy adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2055,8 +2055,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Quantis address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto Quantis adresu</translation>
+        <source>Sign the message to prove you own this QLegacy address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto QLegacy adresu</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2087,8 +2087,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Quantis address</source>
-        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou Quantis adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified QLegacy address</source>
+        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou QLegacy adresou</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2098,8 +2098,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Quantis address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte Quantis adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a QLegacy address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte QLegacy adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2108,8 +2108,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Quantis signature</source>
-        <translation>Zadajte Quantis podpis</translation>
+        <source>Enter QLegacy signature</source>
+        <translation>Zadajte QLegacy podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2687,8 +2687,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>Quantis version</source>
-        <translation>Quantis verzia</translation>
+        <source>QLegacy version</source>
+        <translation>QLegacy verzia</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2697,8 +2697,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or Quantisd</source>
-        <translation>Pošli príkaz na -server alebo Quantisd</translation>
+        <source>Send command to -server or QLegacyd</source>
+        <translation>Pošli príkaz na -server alebo QLegacyd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2717,13 +2717,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: quantis.conf)</source>
-        <translation>Zadajte konfiguračný súbor (predvolené: quantis.conf)</translation>
+        <source>Specify configuration file (default: QLegacy.conf)</source>
+        <translation>Zadajte konfiguračný súbor (predvolené: QLegacy.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: Quantisd.pid)</source>
-        <translation>Zadajte pid súbor (predvolené: Quantisd.pid)</translation>
+        <source>Specify pid file (default: QLegacyd.pid)</source>
+        <translation>Zadajte pid súbor (predvolené: QLegacyd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2740,24 +2740,24 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=quantisrpc
+rpcuser=QLegacyrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Quantis Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;QLegacy Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíte nastaviť rpcpassword v konfiguračnom súbore:
 %s
 Doporučuje sa použiť nasledovné náhodne heslo:
-rpcuser=quantisrpc
+rpcuser=QLegacyrpc
 rpcpassword=%s
 (toto heslo si nemusíte pamätať)
 Užívateľské meno a heslo NESMIE byť rovnaké.
 Ak súbor neexistuje, vytvorte ho s právami &quot;môže čítať iba vlastník&quot;.
 Odporúča sa tiež nastaviť &quot;alertnotify&quot;, takže budete upozornení na problémy,
-napríklad: alertnotify=echo %%s | mail -s &quot;Quantis upozornenie&quot; admin@foo.com
+napríklad: alertnotify=echo %%s | mail -s &quot;QLegacy upozornenie&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2862,8 +2862,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;Quantis upozornenie&quot; admin
     </message>
     <message>
         <location line="-103"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Quantis will not work properly.</source>
-        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny Quantis nebude pracovať správne.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong QLegacy will not work properly.</source>
+        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny QLegacy nebude pracovať správne.</translation>
     </message>
     <message>
         <location line="+132"/>
@@ -3169,8 +3169,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;Quantis upozornenie&quot; admin
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. Quantis is shutting down.</source>
-        <translation>Úvodné kontrolné testy zlyhali. Quantis sa teraz zatvori.</translation>
+        <source>Initialization sanity check failed. QLegacy is shutting down.</source>
+        <translation>Úvodné kontrolné testy zlyhali. QLegacy sa teraz zatvori.</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -3234,13 +3234,13 @@ napríklad: alertnotify=echo %%s | mail -s &quot;Quantis upozornenie&quot; admin
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Quantis</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu Quantis</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of QLegacy</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu QLegacy</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Quantis to complete</source>
-        <translation>Peňaženka potrebuje byť prepísaná: reštartujte Quantis k dokončeniu</translation>
+        <source>Wallet needed to be rewritten: restart QLegacy to complete</source>
+        <translation>Peňaženka potrebuje byť prepísaná: reštartujte QLegacy k dokončeniu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3304,8 +3304,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;Quantis upozornenie&quot; admin
     </message>
     <message>
         <location line="+125"/>
-        <source>Unable to bind to %s on this computer. Quantis is probably already running.</source>
-        <translation>Nemôžem sa pripojiť na %s na tomto počítači. Quantis je pravdepodobne už beží.</translation>
+        <source>Unable to bind to %s on this computer. QLegacy is probably already running.</source>
+        <translation>Nemôžem sa pripojiť na %s na tomto počítači. QLegacy je pravdepodobne už beží.</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3344,8 +3344,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;Quantis upozornenie&quot; admin
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Quantis is probably already running.</source>
-        <translation>Nedá sa zamknúť dátová zložka %s. Quantis je pravdepodobne už spustený</translation>
+        <source>Cannot obtain a lock on data directory %s. QLegacy is probably already running.</source>
+        <translation>Nedá sa zamknúť dátová zložka %s. QLegacy je pravdepodobne už spustený</translation>
     </message>
     <message>
         <location line="+4"/>

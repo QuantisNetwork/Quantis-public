@@ -129,14 +129,14 @@ ifeq (${USE_WALLET}, 1)
         obj/walletdb.o
 endif
 
-all: quantisd.exe
+all: QLegacyd.exe
 
 
 # build secp256k1
 DEFS += $(addprefix -I,$(CURDIR)/secp256k1/include)
 secp256k1/src/libsecp256k1_la-secp256k1.o:
 	@echo "Building Secp256k1 ..."; cd secp256k1; chmod 755 *; ./autogen.sh; ./configure --enable-module-recovery; make; cd ..;
-quantisd.exe: secp256k1/src/libsecp256k1_la-secp256k1.o
+QLegacyd.exe: secp256k1/src/libsecp256k1_la-secp256k1.o
 
 LIBS += $(CURDIR)/leveldb/libleveldb.a $(CURDIR)/leveldb/libmemenv.a -l shlwapi
 DEFS += $(addprefix -I,$(CURDIR)/leveldb/include)
@@ -152,13 +152,13 @@ obj/%.o: %.cpp $(HEADERS)
 obj/%.o: %.c $(HEADERS)
 	$(CXX) -c $(CFLAGS) -fpermissive -o $@ $<
 
-quantisd.exe: $(OBJS:obj/%=obj/%)
+QLegacyd.exe: $(OBJS:obj/%=obj/%)
 	g++ $(CFLAGS) $(LDFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
 
 clean:
 	-rm -f obj/*.o
-	-rm -f quantisd.exe
+	-rm -f QLegacyd.exe
 	-rm -f obj/build.h
 	cd leveldb && TARGET_OS=NATIVE_WINDOWS $(MAKE) clean && cd ..
 
-QUANTIS:
+QLegacy:

@@ -3,7 +3,7 @@
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-# Mac OS X makefile for Quantis
+# Mac OS X makefile for QLegacy
 # Originally by Laszlo Hanyecz (solar@heliacal.net)
 
 CXX=clang++
@@ -36,7 +36,7 @@ USE_LOWMEM:=0
 LIBS= -dead_strip
 
 ifdef STATIC
-# Build STATIC if you are redistributing the Quantisd binary
+# Build STATIC if you are redistributing the QLegacyd binary
 LIBS += \
  $(DB48_DIR)/lib/libdb_cxx-4.8.a \
  $(BOOST_DIR)/lib/libboost_system.a \
@@ -161,13 +161,13 @@ ifeq (${USE_LOWMEM}, 1)
     DEFS += -DLOWMEM
 endif
 
-all: quantisd
+all: QLegacyd
 
 # build secp256k1
 DEFS += $(addprefix -I,$(CURDIR)/secp256k1/include)
 secp256k1/src/libsecp256k1_la-secp256k1.o:
 	@echo "Building Secp256k1 ..."; cd secp256k1; chmod 755 *; ./autogen.sh; ./configure --enable-module-recovery; make; cd ..;
-quantisd: secp256k1/src/libsecp256k1_la-secp256k1.o
+QLegacyd: secp256k1/src/libsecp256k1_la-secp256k1.o
 
 # build leveldb
 LIBS += $(CURDIR)/leveldb/libleveldb.a $(CURDIR)/leveldb/libmemenv.a
@@ -195,13 +195,13 @@ obj/%.o: %.c
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-quantisd: $(OBJS:obj/%=obj/%)
+QLegacyd: $(OBJS:obj/%=obj/%)
 	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
 
 clean:
-	-rm -f quantisd
+	-rm -f QLegacyd
 	-rm -f obj/*.o
 	-rm -f obj/*.P
 	-rm -f obj/build.h
 
-QUANTIS:
+QLegacy:

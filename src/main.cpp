@@ -81,7 +81,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Quantis Signed Message:\n";
+const string strMessageMagic = "QLegacy Signed Message:\n";
 
 std::set<uint256> setValidatedTx;
 
@@ -2536,13 +2536,13 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
                         int64_t blockValue = vtx[1].vout[1].nValue;
                         int64_t nCredit = blockValue / 0.9;
                         int64_t devFee = nCredit * 0.1 - 0.5;
-                        CQuantisCoinAddress devRewardAddress(getDevAddress(pindex->nHeight + 1));
+                        CQLegacyCoinAddress devRewardAddress(getDevAddress(pindex->nHeight + 1));
                         CScript devRewardscriptPubKey = GetScriptForDestination(devRewardAddress.Get());
                         CTxOut lastBlockTx = vtx[1].vout[vtx[1].vout.size() - 1];
                         if(lastBlockTx.nValue < devFee || lastBlockTx.scriptPubKey != devRewardscriptPubKey)
                             foundDevFee = false;
                     } else if (false) {
-                        CQuantisCoinAddress devRewardAddress(getDevAddress(pindex->nHeight + 1));
+                        CQLegacyCoinAddress devRewardAddress(getDevAddress(pindex->nHeight + 1));
                         CScript devRewardscriptPubKey = GetScriptForDestination(devRewardAddress.Get());
                         foundDevFee = false;
                         for (unsigned int i = 0; i < vtx[1].vout.size(); i++) {
@@ -2554,7 +2554,7 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
 
                     CTxDestination address1;
                     ExtractDestination(payee, address1);
-                    CQuantisCoinAddress address2(address1);
+                    CQLegacyCoinAddress address2(address1);
                     if (!foundDevFee) {
                         if(fDebug) { LogPrintf("CheckBlock() : Couldn't find devfee payment(%d|%d) or payee(%d|%s) nHeight %d. \n", foundPaymentAmount, masternodePaymentAmount, foundPayee, address2.ToString().c_str(), pindexBest->nHeight+1); }
                         return DoS(100, error("CheckBlock() : Couldn't find devfee payment or payee"));
@@ -3257,7 +3257,7 @@ struct CImportingNow
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("quantis-loadblk");
+    RenameThread("QLegacy-loadblk");
 
     CImportingNow imp;
 
@@ -3769,7 +3769,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv)
                 // this situation and push another getblocks to continue.
                 PushGetBlocks(pfrom, mapBlockIndex[inv.hash], uint256(0));
                 if (fDebug)
-                    LogPrintf("Quantis request: %s\n", inv.ToString());
+                    LogPrintf("QLegacy request: %s\n", inv.ToString());
             }
 
             // Track requests for our stuff

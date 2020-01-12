@@ -66,13 +66,13 @@ void OptionsModel::Init()
     if (!settings.contains("nDarksendRounds"))
         settings.setValue("nDarksendRounds", 2);
     nDarksendRounds = settings.value("nDarksendRounds").toLongLong();
-    if (!settings.contains("nAnonymizeQuantisAmount"))
-        settings.setValue("nAnonymizeQuantisAmount", 1000);
-    nAnonymizeQuantisAmount = settings.value("nAnonymizeQuantisAmount").toLongLong();
+    if (!settings.contains("nAnonymizeQLegacyAmount"))
+        settings.setValue("nAnonymizeQLegacyAmount", 1000);
+    nAnonymizeQLegacyAmount = settings.value("nAnonymizeQLegacyAmount").toLongLong();
     if (settings.contains("nDarksendRounds"))
         SoftSetArg("-darksendrounds", settings.value("nDarksendRounds").toString().toStdString());
-    if (settings.contains("nAnonymizeQuantisAmount"))
-        SoftSetArg("-anonymizetraveamount", settings.value("nAnonymizeQuantisAmount").toString().toStdString());
+    if (settings.contains("nAnonymizeQLegacyAmount"))
+        SoftSetArg("-anonymizetraveamount", settings.value("nAnonymizeQLegacyAmount").toString().toStdString());
 
 
 
@@ -206,8 +206,8 @@ QVariant OptionsModel::data(const QModelIndex & index, int role) const
             return fCoinControlFeatures;
         case DarksendRounds:
             return QVariant(nDarksendRounds);
-        case AnonymizeQuantisAmount:
-            return QVariant(nAnonymizeQuantisAmount);
+        case AnonymizeQLegacyAmount:
+            return QVariant(nAnonymizeQLegacyAmount);
         case UseBlackTheme:
             return QVariant(fUseBlackTheme);
         default:
@@ -318,10 +318,10 @@ bool OptionsModel::setData(const QModelIndex & index, const QVariant & value, in
             settings.setValue("nDarksendRounds", nDarksendRounds);
             emit darksendRoundsChanged(nDarksendRounds);
             break;
-        case AnonymizeQuantisAmount:
-            nAnonymizeQuantisAmount = value.toInt();
-            settings.setValue("nAnonymizeQuantisAmount", nAnonymizeQuantisAmount);
-            emit AnonymizeQuantisAmountChanged(nAnonymizeQuantisAmount);
+        case AnonymizeQLegacyAmount:
+            nAnonymizeQLegacyAmount = value.toInt();
+            settings.setValue("nAnonymizeQLegacyAmount", nAnonymizeQLegacyAmount);
+            emit AnonymizeQLegacyAmountChanged(nAnonymizeQLegacyAmount);
             break;
         default:
             break;

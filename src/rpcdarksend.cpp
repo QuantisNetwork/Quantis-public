@@ -37,7 +37,7 @@ void SendMoney(const CTxDestination &address, CAmount nValue, CWalletTx& wtxNew,
         throw JSONRPCError(RPC_WALLET_ERROR, strError);
     }
 
-    // Parse Quantis address
+    // Parse QLegacy address
     CScript scriptPubKey = GetScriptForDestination(address);
 
     // Create and send the transaction
@@ -59,8 +59,8 @@ Value darksend(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() == 0)
         throw runtime_error(
-            "darksend <quantisaddress> <amount>\n"
-            "quantisaddress, reset, or auto (AutoDenominate)"
+            "darksend <QLegacyaddress> <amount>\n"
+            "QLegacyaddress, reset, or auto (AutoDenominate)"
             "<amount> is a real and is rounded to the nearest 0.00000001"
             + HelpRequiringPassphrase());
 
@@ -81,14 +81,14 @@ Value darksend(const Array& params, bool fHelp)
 
     if (params.size() != 2)
         throw runtime_error(
-            "darksend <quantisaddress> <amount>\n"
-            "quantisaddress, denominate, or auto (AutoDenominate)"
+            "darksend <QLegacyaddress> <amount>\n"
+            "QLegacyaddress, denominate, or auto (AutoDenominate)"
             "<amount> is type \"real\" and will be rounded to the nearest 0.1"
             + HelpRequiringPassphrase());
 
-    CQuantisCoinAddress address(params[0].get_str());
+    CQLegacyCoinAddress address(params[0].get_str());
     if (!address.IsValid())
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid Quantis address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid QLegacy address");
 
     // Amount
     CAmount nAmount = AmountFromValue(params[1]);
@@ -152,16 +152,16 @@ Value masternode(const Array& params, bool fHelp)
                 "  list         - Print list of all known masternodes (see masternodelist for more info)\n"
                 "  list-conf    - Print masternode.conf in JSON format\n"
                 "  outputs      - Print masternode compatible outputs\n"
-                "  start        - Start masternode configured in quantis.conf\n"
+                "  start        - Start masternode configured in QLegacy.conf\n"
                 "  start-alias  - Start single masternode by assigned alias configured in masternode.conf\n"
                 "  start-many   - Start all masternodes configured in masternode.conf\n"
                 "  status       - Print masternode status information\n"
-                "  stop         - Stop masternode configured in quantis.conf\n"
+                "  stop         - Stop masternode configured in QLegacy.conf\n"
                 "  stop-alias   - Stop single masternode by assigned alias configured in masternode.conf\n"
                 "  stop-many    - Stop all masternodes configured in masternode.conf\n"
                 "  winners      - Print list of masternode winners\n"
-                "  vote-many    - Vote on a Quantis initiative\n"
-                "  vote         - Vote on a Quantis initiative\n"
+                "  vote-many    - Vote on a QLegacy initiative\n"
+                "  vote         - Vote on a QLegacy initiative\n"
                 );
 
     if (strCommand == "stop")
@@ -508,7 +508,7 @@ Value masternode(const Array& params, bool fHelp)
             pubkey.SetDestination(winner->pubkey.GetID());
             CTxDestination address1;
             ExtractDestination(pubkey, address1);
-            CQuantisCoinAddress address2(address1);
+            CQLegacyCoinAddress address2(address1);
 
             obj.push_back(Pair("IP:port",       winner->addr.ToString().c_str()));
             obj.push_back(Pair("protocol",      (int64_t)winner->protocolVersion));
@@ -527,7 +527,7 @@ Value masternode(const Array& params, bool fHelp)
         CKey secret;
         secret.MakeNewKey(false);
 
-        return CQuantisCoinSecret(secret).ToString();
+        return CQLegacyCoinSecret(secret).ToString();
     }
 
     if (strCommand == "winners")
@@ -544,7 +544,7 @@ Value masternode(const Array& params, bool fHelp)
             if(masternodePayments.GetBlockPayee(nHeight, payee, vin)){
                 CTxDestination address1;
                 ExtractDestination(payee, address1);
-                CQuantisCoinAddress address2(address1);
+                CQLegacyCoinAddress address2(address1);
 
                 if(strMode == "addr")
                     obj.push_back(Pair(boost::lexical_cast<std::string>(nHeight),       address2.ToString().c_str()));
@@ -734,7 +734,7 @@ Value masternode(const Array& params, bool fHelp)
         pubkey = GetScriptForDestination(activeMasternode.pubKeyMasternode.GetID());
         CTxDestination address1;
         ExtractDestination(pubkey, address1);
-        CQuantisCoinAddress address2(address1);
+        CQLegacyCoinAddress address2(address1);
 
         Object mnObj;
         mnObj.push_back(Pair("vin", activeMasternode.vin.ToString().c_str()));
@@ -776,7 +776,7 @@ Value masternodelist(const Array& params, bool fHelp)
                 "  rank           - Print rank of a masternode based on current block\n"
                 "  status         - Print masternode status: ENABLED / EXPIRED / VIN_SPENT / REMOVE / POS_ERROR (can be additionally filtered, partial match)\n"
                 "  addr           - Print ip address associated with a masternode (can be additionally filtered, partial match)\n"
-                "  votes          - Print all masternode votes for a Quantis initiative (can be additionally filtered, partial match)\n"
+                "  votes          - Print all masternode votes for a QLegacy initiative (can be additionally filtered, partial match)\n"
                 "  lastpaid       - The last time a node was paid on the network\n"
                 );
     }
@@ -799,7 +799,7 @@ Value masternodelist(const Array& params, bool fHelp)
             } else if (strMode == "reward") {
                 CTxDestination address1;
                 ExtractDestination(mn.rewardAddress, address1);
-                CQuantisCoinAddress address2(address1);
+                CQLegacyCoinAddress address2(address1);
 
                 if(strFilter !="" && address2.ToString().find(strFilter) == string::npos &&
                     strVin.find(strFilter) == string::npos) continue;
@@ -817,7 +817,7 @@ Value masternodelist(const Array& params, bool fHelp)
                 pubkey.SetDestination(mn.pubkey.GetID());
                 CTxDestination address1;
                 ExtractDestination(pubkey, address1);
-                CQuantisCoinAddress address2(address1);
+                CQLegacyCoinAddress address2(address1);
 
                 std::ostringstream addrStream;
                 addrStream << setw(21) << strVin;
@@ -848,7 +848,7 @@ Value masternodelist(const Array& params, bool fHelp)
                 pubkey.SetDestination(mn.pubkey.GetID());
                 CTxDestination address1;
                 ExtractDestination(pubkey, address1);
-                CQuantisCoinAddress address2(address1);
+                CQLegacyCoinAddress address2(address1);
 
                 if(strFilter !="" && address2.ToString().find(strFilter) == string::npos &&
                     strVin.find(strFilter) == string::npos) continue;

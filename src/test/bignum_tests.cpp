@@ -43,7 +43,7 @@ BOOST_AUTO_TEST_SUITE(bignum_tests)
 // It might also be useful to use Google's AddressSanitizer to detect
 // stack buffer overruns, which valgrind can't currently detect.
 
-// Let's Quantis this code not to be inlined, in order to actually
+// Let's QLegacy this code not to be inlined, in order to actually
 // test a generic version of the function. This increases the chance
 // that -ftrapv will detect overflows.
 NOINLINE void mysetint64(CBigNum& num, int64 n)

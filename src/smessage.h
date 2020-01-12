@@ -166,7 +166,7 @@ public:
 
 
 // -- get at the data
-class CQuantisCoinAddress_B : public CQuantisCoinAddress
+class CQLegacyCoinAddress_B : public CQLegacyCoinAddress
 {
 public:
     uint8_t getVersion()

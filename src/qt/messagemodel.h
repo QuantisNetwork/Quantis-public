@@ -67,7 +67,7 @@ struct MessageTableEntry
     }
 };
 
-/** Interface to Quantis Secure Messaging from Qt view code. */
+/** Interface to QLegacy Secure Messaging from Qt view code. */
 class MessageModel : public QAbstractTableModel
 {
     Q_OBJECT

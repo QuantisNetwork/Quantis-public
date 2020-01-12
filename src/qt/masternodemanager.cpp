@@ -167,7 +167,7 @@ void MasternodeManager::updateNodeList()
         pubkey =GetScriptForDestination(mn.pubkey.GetID());
         CTxDestination address1;
         ExtractDestination(pubkey, address1);
-        CQuantisCoinAddress address2(address1);
+        CQLegacyCoinAddress address2(address1);
         QTableWidgetItem *pubkeyItem = new QTableWidgetItem(QString::fromStdString(address2.ToString()));
 
         ui->tableWidgetMasternodes->insertRow(0);

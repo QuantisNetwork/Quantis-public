@@ -9,7 +9,7 @@
 #include "clientversion.h"
 
 //
-// Bootup the masternode, look for a 5000 QUAN input and register on the network
+// Bootup the masternode, look for a 5000 QXAN input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {
@@ -96,7 +96,7 @@ void CActiveMasternode::ManageStatus()
             	return;
             }
 
-            /* rewards are not supported in quantis.conf */
+            /* rewards are not supported in QLegacy.conf */
             CScript rewardAddress = CScript();
             int rewardPercentage = 0;
 
@@ -246,7 +246,7 @@ bool CActiveMasternode::Register(std::string strService, std::string strKeyMaste
         LogPrintf("CActiveMasternode::Register() - Error: %s\n", errorMessage.c_str());
         return false;
     }
-    CQuantisCoinAddress address;
+    CQLegacyCoinAddress address;
     if (strRewardAddress != "")
     {
         if(!address.SetString(strRewardAddress))
@@ -410,7 +410,7 @@ bool CActiveMasternode::GetVinFromOutput(COutput out, CTxIn& vin, CPubKey& pubke
 
 	CTxDestination address1;
     ExtractDestination(pubScript, address1);
-    CQuantisCoinAddress address2(address1);
+    CQLegacyCoinAddress address2(address1);
 
     CKeyID keyID;
     if (!address2.GetKeyID(keyID)) {
@@ -449,7 +449,7 @@ vector<COutput> CActiveMasternode::SelectCoinsMasternode()
 // get all possible outputs for running masternode for a specific pubkey
 vector<COutput> CActiveMasternode::SelectCoinsMasternodeForPubKey(std::string collateralAddress)
 {
-    CQuantisCoinAddress address(collateralAddress);
+    CQLegacyCoinAddress address(collateralAddress);
     CScript scriptPubKey;
     scriptPubKey.SetDestination(address.Get());
     vector<COutput> vCoins;

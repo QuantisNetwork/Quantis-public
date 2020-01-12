@@ -32,8 +32,8 @@
 *.app
 
 build/
-quantisd
-quantis-qt
+QLegacyd
+QLegacy-qt
 Makefile
 src/leveldb
 src/qt/locale

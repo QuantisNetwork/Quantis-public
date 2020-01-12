@@ -226,11 +226,11 @@ int CBase58Data::CompareTo(const CBase58Data& b58) const {
 }
 
 namespace {
-    class CQuantisCoinAddressVisitor : public boost::static_visitor<bool> {
+    class CQLegacyCoinAddressVisitor : public boost::static_visitor<bool> {
     private:
-        CQuantisCoinAddress *addr;
+        CQLegacyCoinAddress *addr;
     public:
-        CQuantisCoinAddressVisitor(CQuantisCoinAddress *addrIn) : addr(addrIn) { }
+        CQLegacyCoinAddressVisitor(CQLegacyCoinAddress *addrIn) : addr(addrIn) { }
 
         bool operator()(const CKeyID &id) const { return addr->Set(id); }
         bool operator()(const CScriptID &id) const { return addr->Set(id); }
@@ -250,28 +250,28 @@ namespace {
     };
 };
 
-bool CQuantisCoinAddress::Set(const CKeyID &id) {
+bool CQLegacyCoinAddress::Set(const CKeyID &id) {
     SetData(Params().Base58Prefix(CChainParams::PUBKEY_ADDRESS), &id, 20);
     return true;
 }
 
-bool CQuantisCoinAddress::Set(const CScriptID &id) {
+bool CQLegacyCoinAddress::Set(const CScriptID &id) {
     SetData(Params().Base58Prefix(CChainParams::SCRIPT_ADDRESS), &id, 20);
     return true;
 }
 
-bool CQuantisCoinAddress::Set(const CTxDestination &dest) {
-    return boost::apply_visitor(CQuantisCoinAddressVisitor(this), dest);
+bool CQLegacyCoinAddress::Set(const CTxDestination &dest) {
+    return boost::apply_visitor(CQLegacyCoinAddressVisitor(this), dest);
 }
 
-bool CQuantisCoinAddress::IsValid() const {
+bool CQLegacyCoinAddress::IsValid() const {
     bool fCorrectSize = vchData.size() == 20;
     bool fKnownVersion = vchVersion == Params().Base58Prefix(CChainParams::PUBKEY_ADDRESS) ||
                          vchVersion == Params().Base58Prefix(CChainParams::SCRIPT_ADDRESS);
     return fCorrectSize && fKnownVersion;
 }
 
-CTxDestination CQuantisCoinAddress::Get() const {
+CTxDestination CQLegacyCoinAddress::Get() const {
     if (!IsValid())
         return CNoDestination();
     uint160 id;
@@ -284,7 +284,7 @@ CTxDestination CQuantisCoinAddress::Get() const {
         return CNoDestination();
 }
 
-bool CQuantisCoinAddress::GetKeyID(CKeyID &keyID) const {
+bool CQLegacyCoinAddress::GetKeyID(CKeyID &keyID) const {
     if (!IsValid() || vchVersion != Params().Base58Prefix(CChainParams::PUBKEY_ADDRESS))
         return false;
     uint160 id;
@@ -293,34 +293,34 @@ bool CQuantisCoinAddress::GetKeyID(CKeyID &keyID) const {
     return true;
 }
 
-bool CQuantisCoinAddress::IsScript() const {
+bool CQLegacyCoinAddress::IsScript() const {
     return IsValid() && vchVersion == Params().Base58Prefix(CChainParams::SCRIPT_ADDRESS);
 }
 
-void CQuantisCoinSecret::SetKey(const CKey& vchSecret) {
+void CQLegacyCoinSecret::SetKey(const CKey& vchSecret) {
     assert(vchSecret.IsValid());
     SetData(Params().Base58Prefix(CChainParams::SECRET_KEY), vchSecret.begin(), vchSecret.size());
     if (vchSecret.IsCompressed())
         vchData.push_back(1);
 }
 
-CKey CQuantisCoinSecret::GetKey() {
+CKey CQLegacyCoinSecret::GetKey() {
     CKey ret;
     ret.Set(&vchData[0], &vchData[32], vchData.size() > 32 && vchData[32] == 1);
     return ret;
 }
 
-bool CQuantisCoinSecret::IsValid() const {
+bool CQLegacyCoinSecret::IsValid() const {
     bool fExpectedFormat = vchData.size() == 32 || (vchData.size() == 33 && vchData[32] == 1);
     bool fCorrectVersion = vchVersion == Params().Base58Prefix(CChainParams::SECRET_KEY);
     return fExpectedFormat && fCorrectVersion;
 }
 
-bool CQuantisCoinSecret::SetString(const char* pszSecret) {
+bool CQLegacyCoinSecret::SetString(const char* pszSecret) {
     return CBase58Data::SetString(pszSecret) && IsValid();
 }
 
-bool CQuantisCoinSecret::SetString(const std::string& strSecret) {
+bool CQLegacyCoinSecret::SetString(const std::string& strSecret) {
     return SetString(strSecret.c_str());
 }
 

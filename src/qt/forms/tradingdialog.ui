@@ -2320,7 +2320,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Demand: 0.00000000 QUAN</string>
+          <string>Demand: 0.00000000 QXAN</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -2330,7 +2330,7 @@
        <item row="0" column="9" colspan="3">
         <widget class="QLabel" name="FORSupply">
          <property name="text">
-          <string>Supply: 0.00000000 QUAN</string>
+          <string>Supply: 0.00000000 QXAN</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

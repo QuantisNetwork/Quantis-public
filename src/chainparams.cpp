@@ -97,7 +97,23 @@ public:
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
         vSeeds.push_back(CDNSSeedData("nodes.docrypto.com","quan.nodes.docrypto.com"));
-        vSeeds.push_back(CDNSSeedData("quantis-coin.io","quantis-coin.io"));
+        vSeeds.push_back(CDNSSeedData("QLegacy-coin.io","QLegacy-coin.io"));
+		vSeeds.push_back(CDNSSeedData("1","144.202.23.216"));
+		vSeeds.push_back(CDNSSeedData("2","151.252.59.32"));
+		vSeeds.push_back(CDNSSeedData("3","108.61.241.59"));
+		vSeeds.push_back(CDNSSeedData("4","45.32.222.54"));
+		vSeeds.push_back(CDNSSeedData("5","89.40.2.75"));
+		vSeeds.push_back(CDNSSeedData("6","85.187.105.115"));
+		vSeeds.push_back(CDNSSeedData("7","155.138.165.212"));
+		vSeeds.push_back(CDNSSeedData("8","94.130.107.201"));
+		vSeeds.push_back(CDNSSeedData("9","94.130.107.201"));
+		vSeeds.push_back(CDNSSeedData("10","195.201.172.179"));
+		vSeeds.push_back(CDNSSeedData("11","151.252.59.31"));
+		vSeeds.push_back(CDNSSeedData("12","176.139.213.166"));
+		vSeeds.push_back(CDNSSeedData("13","151.252.59.30"));
+		vSeeds.push_back(CDNSSeedData("14","85.24.199.222"));
+		vSeeds.push_back(CDNSSeedData("15","207.201.203.254"));
+		vSeeds.push_back(CDNSSeedData("16","188.147.37.80"));
 
         convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
 

@@ -1,9 +1,9 @@
-Building Quantis
+Building QLegacy
 
-See doc/readme-qt.rst for instructions on building Quantis QT,
+See doc/readme-qt.rst for instructions on building QLegacy QT,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of Quantis.
+implementation of QLegacy.
 
-See doc/build-*.txt for instructions on building quantisd,
+See doc/build-*.txt for instructions on building QLegacyd,
 the intended-for-services, no-graphical-interface, reference
-implementation of Quantis.
+implementation of QLegacy.

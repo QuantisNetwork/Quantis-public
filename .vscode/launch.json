@@ -9,7 +9,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/src/quantisd",
+            "program": "${workspaceFolder}/src/QLegacyd",
             "args": ["-rpcuser=u", "-rpcpassword=p", "-printtoconsole"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",

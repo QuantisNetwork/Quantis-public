@@ -80,7 +80,7 @@ static int secp256k1_schnorr_sig_sign(const secp256k1_ecmult_gen_context* ctx, u
     secp256k1_fe_normalize(&Ra.y);
     if (secp256k1_fe_is_odd(&Ra.y)) {
         /* R's y coordinate is odd, which is not allowed (see rationale above).
-           Quantis it to be even by negating the nonce. Note that this even works
+           QLegacy it to be even by negating the nonce. Note that this even works
            for multiparty signing, as the R point is known to all participants,
            which can all decide to flip the sign in unison, resulting in the
            overall R point to be negated too. */

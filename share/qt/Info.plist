@@ -7,23 +7,23 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Quantis-Qt</string>
+	<string>QLegacy-Qt</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Quantis-Qt</string>
+	<string>QLegacy-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>co.Quantis.quantis-qt</string>
+	<string>co.QLegacy.QLegacy-qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>co.Quantis.QuantisPayment</string>
+            <string>co.QLegacy.QLegacyPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>Quantis</string>
+              <string>QLegacy</string>
             </array>
           </dict>
         </array>
